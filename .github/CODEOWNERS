@@ -1,0 +1,17 @@
+# Aquí se define a quién pertenece cada archivo
+# Cuando se haga una PR y se cambie un archivo que pertenezca a otra
+# persona, se le solicitará una review automáticamente a esa persona.
+
+./src/index.html @Trafalgar018
+./src/css/index.css @Trafalgar018
+
+./src/players.html @MeLlamoPablo
+./src/css/players.css @MeLlamoPablo
+
+./src/events.html @Marcobr93
+./src/css/events.css @Marcobr93
+./src/achievements.html @Marcobr93
+./src/css/achievements.css @Marcobr93
+
+./src/contact.html @Albertomb11
+./src/css/contact.css @Albertomb11
