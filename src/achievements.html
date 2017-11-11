@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Palmarés</title>
+    <link rel="stylesheet" href="css/achievementsEvents.css">
+    <script type="text/javascript" src="js/form.js"></script>
+</head>
+<body>
+    <header>
+        <p>Header</p>
+    </header>
+    <section>
+        <h2>Palmarés</h2>
+        <table class="tabla-palmares">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Posición</th>
+                    <th>Tier</th>
+                    <th>Torneo</th>
+                    <th>Resultados</th>
+                    <th>Ganancias</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2017-10-15</td>
+                    <td>1st</td>
+                    <td>Major</td>
+                    <td>Alcosa League Season 3</td>
+                    <td>3 : 1<img src="images/Mineski_logo_06-2017_std.png"></td>
+                    <td>120.000 euros </td>
+                </tr>
+                <tr>
+                    <td>2017-10-15</td>
+                    <td>1st</td>
+                    <td>Premier</td>
+                    <td>The International 2017</td>
+                    <td>3 : 0<img src="images/Newbeelogo_std.png"></td>
+                    <td>10.250.500 euros </td>
+                </tr>
+                <tr>
+                    <td>2017-10-15</td>
+                    <td>1st</td>
+                    <td>Major</td>
+                    <td>Andalusia League Season 8</td>
+                    <td>3 : 1<img src="images/Fnaticlogo_std.png"></td>
+                    <td>120.000 euros </td>
+                </tr>
+                <tr>
+                    <td>2017-10-15</td>
+                    <td>1st</td>
+                    <td>Premier</td>
+                    <td>Alcosa League Season 3</td>
+                    <td>3 : 1<img src="images/VGJ_logo_std.png"></td>
+                    <td>120.000 euros </td>
+                </tr>
+                <tr>
+                    <td>2017-10-15</td>
+                    <td>2st</td>
+                    <td>Premier</td>
+                    <td>Alcosa League Season 3</td>
+                    <td>3 : 1<img src="images/OGLogo_std.png"></td>
+                    <td>120.000 euros </td>
+                </tr>
+                <tr>
+                    <td>2017-10-15</td>
+                    <td>1st</td>
+                    <td>Premier</td>
+                    <td>Alcosa League Season 3</td>
+                    <td>3 : 1<img src="images/Tnclogo_std.png"></td>
+                    <td>120.000 euros </td>
+                </tr>
+                <tr>
+                    <td>2017-10-15</td>
+                    <td>6th</td>
+                    <td>Premier</td>
+                    <td>Alcosa League Season 3</td>
+                    <td>3 : 1<img src="images/Secretdotalogo_std.png"></td>
+                    <td>120.000 euros </td>
+                </tr>
+                <tr>
+                    <td>2017-10-15</td>
+                    <td>1st</td>
+                    <td>Major</td>
+                    <td>Alcosa League Season 3</td>
+                    <td>3 : 1<img src="images/Escape_Gaminglogo_std.png"></td>
+                    <td>120.000 euros </td>
+                </tr>
+                <tr>
+                    <td>2017-10-15</td>
+                    <td>1st</td>
+                    <td>Premie</td>
+                    <td>Alcosa League Season 3</td>
+                    <td>3 : 1<img src="images/Eglogo_std.png"></td>
+                    <td>120.000 euros </td>
+                </tr>
+                <tr>
+                    <td>2017-10-15</td>
+                    <td>1st</td>
+                    <td>Premier</td>
+                    <td>Alcosa League Season 3</td>
+                    <td>3 : 1<img src="images/Secretdotalogo_std.png"></td>
+                    <td>120.000 euros </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="boton-añadir">
+            <button>
+                <h3 style='cursor: pointer;' onClick="muestra_oculta('formulario')" title="" class="boton_mostrar">Añadir resultado</h3>
+            </button>
+        </div>
+        <div id="formulario">
+            <form action="" method="post">
+                <div>
+                    <label for="fecha">Fecha: </label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+                <div>
+                    <label for="posicion">Posición: </label>
+                    <input type="number" name="posicion" id="posicion">
+                </div>
+                <div>
+                    <label for="tier">Tier: </label>
+                    <select id="tier" name="tier">
+                        <option value="" selected="selected">- Selecciona -</option>
+                        <option value="premier">Premier</option>
+                        <option value="major">Major</option>
+                        <option value="minor">Minor</option>
+                        <option value="mensual">Mensual</option>
+                        <option value="semanal">Semanal</option>
+                        <option value="muestra">Muestra</option>
+                        <option value="misc">Misc</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="torneo">Torneo: </label>
+                    <input type="text" name="torneo" id="torneo">
+                </div>
+                <div>
+                    <label for="resultado">Resultado: </label>
+                    <input type="text" name="resultado" id="resultado">
+                </div>
+                <div>
+                    <label for="ganancias">Ganancias(euros): </label>
+                    <input type="number" name="ganancias" id="ganancias">
+                </div>
+                <input type="submit" value="Añadir">
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
