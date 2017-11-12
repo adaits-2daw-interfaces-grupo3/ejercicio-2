@@ -98,8 +98,9 @@ only screen and (max-width: 760px),
     td:nth-of-type(2):before { content: "Posición"; }
     td:nth-of-type(3):before { content: "Tier"; }
     td:nth-of-type(4):before { content: "Torneo"; }
-    td:nth-of-type(5):before { content: "Resultados"; }
-    td:nth-of-type(6):before { content: "Ganancias"; }
+    td:nth-of-type(5):before { content: "Resultado"; }
+    td:nth-of-type(6):before { content: "Equipo rival"; }
+    td:nth-of-type(7):before { content: "Ganancias"; }
 }
 /**
 Al poner el botón en un div, podemos centrarlo en la pantalla.

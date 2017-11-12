@@ -1,0 +1,177 @@
+
+/*
+    Expandimos la tabla por toda la página y tulizamos la propiedad border-collapse para fusionar los bordes.
+ */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/*
+    Utilizzamos nth-of-type(odd) en los tr para darle color a las filas impares y de esta forma poder diferenciar las
+    filas con más facilidad.
+*/
+tr:nth-of-type(odd) {
+    background: #eee;
+}
+
+/*
+    Le damos un color de fondo a los th y le cambiamos el color de la fuente a blanco.
+ */
+th {
+    background: #333;
+    color: white;
+}
+
+/*
+    Asignamos un relleno, borders y una alineación a los elementos td y th.
+ */
+td, th {
+    padding: 6px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+h2 {
+    padding: 6px;
+    text-align: center;
+}
+
+/*
+    Usando mediaQuery lo que haremos es ajustar la tabla para que cuando pase el máximo de ancho, se ajuste de forma
+    que repetirá la cabecera de la tabla de manera vertical por cada una de las filas de datos que contenga.
+ */
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+
+    /*
+    Fuerza la tabla para que no sea una tabla
+    */
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    /*
+    Oculta el encabezado de la tabla
+     */
+    thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    /*
+    Ponemos bordes a los tr
+     */
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    /*
+    Hacemos que los td se "comporten" como una fila.
+     */
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+    /*
+    Ahora como la cabecera de una tabla.
+     */
+    td:before {
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    /*
+    Colocamos la cabecera en paralelo a sus atributos, para que sepamos a que corresponde cada información.
+     */
+    td:nth-of-type(1):before { content: "Tier"; }
+    td:nth-of-type(2):before { content: "Comienzo"; }
+    td:nth-of-type(3):before { content: "Fin"; }
+    td:nth-of-type(4):before { content: "Torneo"; }
+    td:nth-of-type(5):before { content: "Serie"; }
+    td:nth-of-type(6):before { content: "Nº Equipos"; }
+    td:nth-of-type(7):before { content: "Localización"; }
+}
+/**
+Al poner el botón en un div, podemos centrarlo en la pantalla.
+ */
+.boton-añadir {
+    text-align: center;
+}
+
+button{
+    margin-top: 20px;
+    color: white;
+    background-color: #3d3d3d;
+    font-weight: 600;
+}
+
+/**
+Le añadimos un margen por arriba al formulario.
+ */
+form {
+    margin-top: 20px;
+}
+
+/**
+Modificamos el margen, anchura, altura y los bordes de los input y select.
+ */
+input, select {
+    margin: 0 0 .4em 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.01);
+    border: 0;
+    border-bottom: 5px solid rgba(0,0,0,.12);
+    line-height: 40px;
+}
+
+/**
+Ponemos en negrita el nombre del campo a rellenar del formulario.
+ */
+label{
+    font-weight: bold;
+}
+
+/**
+Usamos el selector para seleccionar en el html todos los tipos que sean "text", "number" y "date" para establecer la
+la anchura de la zona de relleno izquierdo de los elementos.
+ */
+[type='text'], [type='number'], [type='date'] {
+    padding-left: 1em;
+}
+
+/**
+Usamos el selector para seleccionar en el html todos los tipos que sean "submit" y establecer el color de fondo, el color
+de la letra y la anchura de la fuente.
+ */
+[type='submit'] {
+    background: #3d3d3d;
+    color: white;
+    font-weight: 600;
+}
+
+/**
+Usamos el selector para seleccionar en el html todos los tipos que sean "text", "number" y "date", para establecer el focus
+y añadirle un borde al campo con un color. outline: none sirve para que al seleccionar un campo, no aparezca un recuadro.
+ */
+[type='text']:focus, [type='number']:focus, [type='date']:focus {
+    border: 0;
+    border-bottom: 5px solid #3d3d3d;
+    color: #3d3d3d;
+    outline: none;
+}
+
+
