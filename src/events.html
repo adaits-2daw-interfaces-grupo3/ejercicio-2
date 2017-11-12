@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Próximos eventos</title>
+    <link rel="stylesheet" href="css/events.css">
+    <script type="text/javascript" src="js/form.js"></script>
+</head>
+<body>
+<header>
+    <p>Header</p>
+</header>
+<section>
+    <h2>Próximos eventos</h2>
+    <table class="tabla-eventos">
+        <thead>
+        <tr>
+            <th>Tier</th>
+            <th>Comienzo</th>
+            <th>Fin</th>
+            <th>Torneo</th>
+            <th>Serie</th>
+            <th>Nº Equipos</th>
+            <th>Localización</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Clasificatorio</td>
+            <td>15/11/2017</td>
+            <td>16/11/2017</td>
+            <td>MDL Macau Southeast Asia Qualifier</td>
+            <td><img src="images/MDL_logo_small.png"></td>
+            <td>8</td>
+            <td>Online <img src="images/sea.png"></td>
+        </tr>
+        <tr>
+            <td>Clasificatorio</td>
+            <td>27/11/2017</td>
+            <td>29/11/2017</td>
+            <td>MDL Macau North America Qualifier</td>
+            <td><img src="images/MDL_logo_small.png"></td>
+            <td>8</td>
+            <td>Online <img src="images/North_America.png"></td>
+        </tr>
+        <tr>
+            <td>Clasificatorio</td>
+            <td>15/12/2017</td>
+            <td>17/12/2017</td>
+            <td>MDL Macau North Europe Qualifier</td>
+            <td><img src="images/MDL_logo_small.png"></td>
+            <td>8</td>
+            <td>Online <img src="images/Eu.png"></td>
+        </tr>
+        <tr>
+            <td>Mayor</td>
+            <td>25/01/2018</td>
+            <td>27/01/2018</td>
+            <td>Adrenaline Cyber League</td>
+            <td><img src="images/Adrenaline_Cyber_League_opt.png"></td>
+            <td>8</td>
+            <td>Moscú <img src="images/Ru.png"></td>
+        </tr>
+        <tr>
+            <td>Primera</td>
+            <td>09/02/2018</td>
+            <td>11/02/2018</td>
+            <td>DreamLeague Season 8</td>
+            <td><img src="images/Dreamleague_logo_small.png"></td>
+            <td>16</td>
+            <td>Online <img src="images/World.gif"></td>
+        </tr>
+        <tr>
+            <td>Menor</td>
+            <td>07/03/2018</td>
+            <td>09/03/2018</td>
+            <td>Chameleon League Manolo 2018</td>
+            <td><img src="images/chameleon_opt.jpg"></td>
+            <td>20</td>
+            <td>Online <img src="images/Es.png"></td>
+        </tr>
+        <tr>
+            <td>Qualifier</td>
+            <td>14/04/2018</td>
+            <td>15/04/2018</td>
+            <td>ROG MASTERS 2018</td>
+            <td><img src="images/ROG_Masters_small_opt.png"></td>
+            <td>8</td>
+            <td>América del Sur <img src="images/South_america.png"></td>
+        </tr>
+        <tr>
+            <td>Primera</td>
+            <td>26/05/2018</td>
+            <td>28/05/2018</td>
+            <td>Internacional Amigooooo Cup</td>
+            <td><img src="images/logo-adaits_opt.png"></td>
+            <td>40</td>
+            <td>España <img src="images/Es.png"></td>
+        </tr>
+        <tr>
+            <td>Menor</td>
+            <td>17/06/2018</td>
+            <td>18/06/2018</td>
+            <td>The Shanghai Menor 2018</td>
+            <td><img src="images/shanghai_opt.png"></td>
+            <td>16</td>
+            <td>Asia <img src="images/Sea.png"></td>
+        </tr>
+        <tr>
+            <td>Primera</td>
+            <td>14/08/2018</td>
+            <td>16/08/201</td>
+            <td>Tito Sam League Season 7</td>
+            <td><img src="images/Tio-Sam_opt.jpg"></td>
+            <td>8</td>
+            <td>Norte América <img src="images/North_America.png"></td>
+        </tr>
+        <tr>
+            <td>Mayor</td>
+            <td>25/09/2018</td>
+            <td>27/09/2018</td>
+            <td>Liga andaluza temporada 9</td>
+            <td><img src="images/Logotipo_de_la_Junta_de_Andalucía_opt.png"></td>
+            <td>20</td>
+            <td>Andalucía <img src="images/Bandera_de_Andalucia_opt.png"></td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="boton-añadir">
+        <button>
+            <h3 style='cursor: pointer;' onClick="muestra_oculta('formulario')" title="" class="boton_mostrar">Añadir evento</h3>
+        </button>
+    </div>
+    <div id="formulario">
+        <form action="" method="post">
+            <div>
+                <label for="tier">Tier: </label>
+                <select id="tier" name="tier">
+                    <option value="" selected="selected">- Selecciona -</option>
+                    <option value="primera">Primera</option>
+                    <option value="mayor">Mayor</option>
+                    <option value="menor">Menor</option>
+                    <option value="mensual">Mensual</option>
+                    <option value="semanal">Semanal</option>
+                    <option value="muestra">Muestra</option>
+                    <option value="calsificatorio">Clasificatorio</option>
+                    <option value="misc">Misc</option>
+                </select>
+            </div>
+            <div>
+                <label for="fechaComienzo">Fecha comienzo: </label>
+                <input type="date" name="fechaComienzo" id="fechaComienzo">
+            </div>
+            <div>
+                <label for="fechaFinal">Fecha final: </label>
+                <input type="date" name="fechaFinal" id="fechaFinal">
+            </div>
+            <div>
+                <label for="torneo">Torneo: </label>
+                <input type="text" name="torneo" id="torneo">
+            </div>
+            <div>
+                <label for="serie">Serie: </label>
+                <input type="text" name="serie" id="serie">
+            </div>
+            <div>
+                <label for="ganancias">Ganancias(euros): </label>
+                <input type="number" name="ganancias" id="ganancias">
+            </div>
+            <div>
+                <label for="numEquipos">Nº equipos: </label>
+                <input type="number" name="numEquipos" id="numEquipos">
+            </div>
+            <div>
+                <label for="localización">Localización: </label>
+                <input type="text" name="localización" id="localización">
+            </div>
+
+            <input type="submit" value="Añadir">
+        </form>
+    </div>
+</section>
+<footer>
+    <p>Footer</p>
+</footer>
+</body>
+</html>
