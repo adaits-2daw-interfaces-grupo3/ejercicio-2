@@ -7,11 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Palmarés</title>
     <link rel="stylesheet" href="css/achievements.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script type="text/javascript" src="js/form.js"></script>
 </head>
 <body>
     <header>
-        <p>Header</p>
+        <div class="wrapper">
+            <nav>
+                <img src="images/Avatar.jpg">
+                <a href="contact.html">Contacto</a>
+                <a href="achievements.html">Palmares</a>
+                <a href="events.html">Próximos Eventos</a>
+                <a href="players.html">Jugadores</a>
+                <a href="index.html">Inicio</a>
+            </nav>
+        </div>
     </header>
     <section>
         <h2>Palmarés</h2>
@@ -146,7 +157,7 @@
                 </div>
                 <div>
                     <label for="tier">Tier: </label>
-                    <select id="tier" name="tier">
+                    <select class="campos" id="tier" name="tier">
                         <option value="" selected="selected">- Selecciona -</option>
                         <option value="primera">Primera</option>
                         <option value="mayor">Mayor</option>
@@ -178,8 +189,33 @@
             </form>
         </div>
     </section>
-    <footer>
-        <p>Footer</p>
+
+    <footer class="footer-distributed">
+        <div class="footer-right">
+            <a href="" target="_blank"><img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png" width=32 height=32 alt="Síguenos en Twitter" /></a>
+            <a href="" target="_blank"><img alt="Siguenos en Facebook" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png" width=32 height=32  /></a>
+            <a href="" target="_blank"><img alt="Siguenos en Google+" src="https://lh5.googleusercontent.com/-F_FBKktZWZk/T3nN0v4FeAI/AAAAAAAAAsc/7dHTxkxn4cI/s32/google32.png" width=32 height=32  /></a>
+            <a href="" target="_blank"><img alt="Siguenos en Instagram" src="https://lh5.googleusercontent.com/-vBqtz2iv2BE/UIqE3LQyFMI/AAAAAAAABgA/TJ4W-vIBjsc/s32/instagram32.png" width=32 height=32  /></a>
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a href="" target="_blank">POLITICAS DE ALCOSA GAMING |</a>
+                <a href="" target="_blank">DISCLAIMER |</a>
+            </p>
+
+            <p>Copyright © 2016 AlcosaGaming Corporation. All rights reserved.<br><br></p>
+
+            <select name="select1" size="1">
+                <option value="">Australia</option>
+                <option value="">Canada</option>
+                <option value="">France</option>
+                <option value="">Germany</option>
+                <option value="">United Kingdom</option>
+                <option selected="selected" value="">United States</option>
+            </select>
+        </div>
     </footer>
 </body>
 </html>
