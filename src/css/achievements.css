@@ -60,14 +60,26 @@ h2 {
  */
 .rotar:hover {
     animation: rotation 2s infinite linear;
+    -webkit-animation: rotation 2s infinite linear;
+    -moz-animation: rotation 2s infinite linear;
+    -o-animation: rotation 2s infinite linear;
+    -ms-animation: rotation 2s infinite linear;
 }
 
 @keyframes rotation {
     from {
         transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
     }
     to {
         transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        -moz-transform: rotate(359deg);
+        -o-transform: rotate(359deg);
+        -ms-transform: rotate(359deg);
     }
 }
 
