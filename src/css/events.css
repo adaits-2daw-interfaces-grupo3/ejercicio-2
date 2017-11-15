@@ -35,7 +35,98 @@ td, th {
 h2 {
     padding: 6px;
     text-align: center;
+    animation: zoom 4s;
 }
+
+/**
+    Le metemos zoom al h2
+ */
+@keyframes zoom {
+    from {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/**
+    Al acceder a la página, los iconos de las banderas se deslizan de abajo hacia arriba hasta colocarse en su lugar
+    correspondiente
+ */
+.animation2 {
+    animation: animation 3s linear;
+}
+
+@keyframes animation {
+    from {
+        transform: translateY(250px) rotateX(90deg) rotateY(150deg) rotateZ(300deg);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+
+/**
+    Rotamos las imágenes del "equipo rival" hacia la izquierda..
+ */
+.rotar:hover {
+    animation: rotation 2s infinite linear;
+}
+
+
+@keyframes rotation {
+    from {
+        transform: rotate(359deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+/*
+    El texto del botón añadir evento se desliza hacia abajo cuando ponemos el ratón encima.
+ */
+.boton_mostrar:hover {
+    animation: botonMostrar 4s;
+}
+
+@keyframes botonMostrar {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        visibility: hidden;
+        transform: translate3d(0, 100%, 0);
+    }
+}
+
+/*
+    El botón añadir del formulario, hace un efecto de ampliación al poner el ratón encima.
+ */
+.boton_añadir:hover {
+    animation: botonAdd 4s;
+}
+
+@keyframes botonAdd {
+    from {
+        transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+        transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+
 
 /*
     Usando mediaQuery lo que haremos es ajustar la tabla para que cuando pase el máximo de ancho, se ajuste de forma
@@ -105,7 +196,7 @@ only screen and (max-width: 760px),
 /**
 Al poner el botón en un div, podemos centrarlo en la pantalla.
  */
-.boton-añadir {
+.boton-mostrar {
     text-align: center;
 }
 
@@ -126,7 +217,7 @@ form {
 /**
 Modificamos el margen, anchura, altura y los bordes de los input y select.
  */
-input, select {
+input, .campos  {
     margin: 0 0 .4em 0;
     width: 100%;
     height: 40px;
