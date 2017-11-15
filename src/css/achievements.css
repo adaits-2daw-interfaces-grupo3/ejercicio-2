@@ -88,16 +88,28 @@ h2 {
  */
 .boton_mostrar:hover {
     animation: botonMostrar 4s;
+    -webkit-animation: botonMostrar 4s;
+    -moz-animation: botonMostrar 4s;
+    -o-animation: botonMostrar 4s;
+    -ms-animation: botonMostrar 4s;
 }
 
 @keyframes botonMostrar {
     from {
         transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
     }
 
     to {
         visibility: hidden;
         transform: translate3d(0, 100%, 0);
+        -webkit-transform: translate3d(0, 100%, 0);
+        -moz-transform: translate3d(0, 100%, 0);
+        -o-transform: translate3d(0, 100%, 0);
+        -ms-transform: translate3d(0, 100%, 0);
     }
 }
 
@@ -106,19 +118,35 @@ h2 {
  */
 .boton_añadir:hover {
     animation: botonAdd 4s;
+    -webkit-animation: botonAdd 4s;
+    -moz-animation: botonAdd 4s;
+    -o-animation: botonAdd 4s;
+    -ms-animation: botonAdd 4s;
 }
 
 @keyframes botonAdd {
     from {
         transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        -moz-transform: scale3d(1, 1, 1);
+        -o-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
     }
 
     50% {
         transform: scale3d(1.05, 1.05, 1.05);
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        -moz-transform: scale3d(1.05, 1.05, 1.05);
+        -o-transform: scale3d(1.05, 1.05, 1.05);
+        -ms-transform: scale3d(1.05, 1.05, 1.05);
     }
 
     to {
         transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        -moz-transform: scale3d(1, 1, 1);
+        -o-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
     }
 }
 

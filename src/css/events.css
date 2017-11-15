@@ -58,14 +58,26 @@ h2 {
  */
 .animation2 {
     animation: animation 3s linear;
+    -webkit-animation: animation 3s linear;
+    -moz-animation: animation 3s linear;
+    -o-animation: animation 3s linear;
+    -ms-animation: animation 3s linear;
 }
 
 @keyframes animation {
     from {
         transform: translateY(250px) rotateX(90deg) rotateY(150deg) rotateZ(300deg);
+        -webkit-transform: translateY(250px) rotateX(90deg) rotateY(150deg) rotateZ(300deg);
+        -moz-transform: translateY(250px) rotateX(90deg) rotateY(150deg) rotateZ(300deg);
+        -o-transform: translateY(250px) rotateX(90deg) rotateY(150deg) rotateZ(300deg);
+        -ms-transform: translateY(250px) rotateX(90deg) rotateY(150deg) rotateZ(300deg);
     }
     to {
         transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        -ms-transform: translateX(0px);
     }
 }
 
@@ -75,15 +87,26 @@ h2 {
  */
 .rotar:hover {
     animation: rotation 2s infinite linear;
+    -webkit-animation: rotation 2s infinite linear;
+    -moz-animation: rotation 2s infinite linear;
+    -o-animation: rotation 2s infinite linear;
+    -ms-animation: rotation 2s infinite linear;
 }
-
 
 @keyframes rotation {
     from {
         transform: rotate(359deg);
+        -webkit-transform: rotate(359deg);
+        -moz-transform: rotate(359deg);
+        -o-transform: rotate(359deg);
+        -ms-transform: rotate(359deg);
     }
     to {
         transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
     }
 }
 
@@ -92,16 +115,28 @@ h2 {
  */
 .boton_mostrar:hover {
     animation: botonMostrar 4s;
+    -webkit-animation: botonMostrar 4s;
+    -moz-animation: botonMostrar 4s;
+    -o-animation: botonMostrar 4s;
+    -ms-animation: botonMostrar 4s;
 }
 
 @keyframes botonMostrar {
     from {
         transform: translate3d(0, 0, 0);
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
     }
 
     to {
         visibility: hidden;
         transform: translate3d(0, 100%, 0);
+        -webkit-transform: translate3d(0, 100%, 0);
+        -moz-transform: translate3d(0, 100%, 0);
+        -o-transform: translate3d(0, 100%, 0);
+        -ms-transform: translate3d(0, 100%, 0);
     }
 }
 
@@ -110,19 +145,35 @@ h2 {
  */
 .boton_añadir:hover {
     animation: botonAdd 4s;
+    -webkit-animation: botonAdd 4s;
+    -moz-animation: botonAdd 4s;
+    -o-animation: botonAdd 4s;
+    -ms-animation: botonAdd 4s;
 }
 
 @keyframes botonAdd {
     from {
         transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        -moz-transform: scale3d(1, 1, 1);
+        -o-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
     }
 
     50% {
         transform: scale3d(1.05, 1.05, 1.05);
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        -moz-transform: scale3d(1.05, 1.05, 1.05);
+        -o-transform: scale3d(1.05, 1.05, 1.05);
+        -ms-transform: scale3d(1.05, 1.05, 1.05);
     }
 
     to {
         transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        -moz-transform: scale3d(1, 1, 1);
+        -o-transform: scale3d(1, 1, 1);
+        -ms-transform: scale3d(1, 1, 1);
     }
 }
 
