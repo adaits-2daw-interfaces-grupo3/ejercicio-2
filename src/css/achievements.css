@@ -126,7 +126,7 @@ form {
 /**
 Modificamos el margen, anchura, altura y los bordes de los input y select.
  */
-input, select {
+input, .campos {
     margin: 0 0 .4em 0;
     width: 100%;
     height: 40px;
