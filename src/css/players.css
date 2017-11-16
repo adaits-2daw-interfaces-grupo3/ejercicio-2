@@ -1,0 +1,133 @@
+#content {
+	background-color:#A9A9A9;
+
+	display: flex;
+	justify-content: center;
+}
+
+#section {
+	width: 70%;
+}
+
+@media (max-width: 1350px) {
+	#section {
+		width: 100%;
+	}
+	.info {
+		min-height: inherit !important;
+		max-height: inherit !important;
+		overflow-y: visible !important;
+	}
+}
+
+@media (max-width: 1000px) {
+	.players {
+		flex-wrap: wrap;
+	}
+}
+
+.players {
+
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.player {
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	cursor: pointer;
+
+}
+
+.picture {
+
+	width: 169px;
+	height: 516px;
+	object-fit: cover;
+
+}
+
+.info {
+
+	display: none;
+
+	height: 100%;
+	margin-top: 70px;
+	padding: 1rem 1rem 1rem 1rem;
+	min-height: 483px;
+	max-height: 483px;
+	overflow-y: scroll;
+	background-color: #8f8f8f;
+
+}
+
+[data-player="Alberto"]:focus ~ #info-alberto {
+
+	display: inline-block;
+	animation: info-appear 0.5s forwards;
+
+}
+
+[data-player="Eloy"]:focus ~ #info-eloy {
+
+	display: inline-block;
+	animation: info-appear 0.5s forwards;
+
+}
+
+[data-player="Marco"]:focus ~ #info-marco {
+
+	display: inline-block;
+	animation: info-appear 0.5s forwards;
+
+}
+
+[data-player="Pablo"]:focus ~ #info-pablo {
+
+	display: inline-block;
+	animation: info-appear 0.5s forwards;
+
+}
+
+[data-player="Alberto"] {
+	animation: flip 0.7s;
+}
+
+[data-player="Eloy"] {
+	animation: flip 0.7s;
+	animation-delay: 0.5s;
+}
+
+[data-player="Marco"] {
+	animation: flip 0.7s;
+	animation-delay: 1s;
+}
+
+[data-player="Pablo"] {
+	animation: flip 0.7s;
+	animation-delay: 1.5s;
+}
+
+@keyframes flip {
+	from {
+		transform: rotateY(0deg);
+	}
+	to {
+		transform: rotateY(360deg);
+	}
+}
+
+@keyframes info-appear {
+	from {
+		opacity: 0;
+		width: 0;
+	}
+	to {
+		opacity: 1;
+		width: 100%;
+	}
+}
