@@ -283,10 +283,10 @@ Usamos el selector para seleccionar en el html todos los tipos que sean "text", 
 y añadirle un borde al campo con un color. outline: none sirve para que al seleccionar un campo, no aparezca un recuadro.
  */
 [type='text']:focus, [type='number']:focus, [type='date']:focus {
-     border: 0;
-     border-bottom: 5px solid #3d3d3d;
-     color: #3d3d3d;
-     outline: none;
- }
+    border: 0;
+    border-bottom: 5px solid #3d3d3d;
+    color: #3d3d3d;
+    outline: none;
+}
 
 
