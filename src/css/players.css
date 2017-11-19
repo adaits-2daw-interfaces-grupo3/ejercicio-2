@@ -1,11 +1,11 @@
 #content {
-	background-color:#A9A9A9;
+	background: linear-gradient(to bottom right, #A9A9A9, #727272);
 
 	display: flex;
 	justify-content: center;
 }
 
-#section {
+#section-jugadores {
 	width: 70%;
 }
 
