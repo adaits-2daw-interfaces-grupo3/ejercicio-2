@@ -1,0 +1,32 @@
+header{
+    width: 100%;
+    overflow: hidden;
+    background: #171718;
+    margin-bottom: 20px;
+}
+.wrapper{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+header.img{
+    float: left;
+
+}
+header nav a{
+    display:inline-block;
+    color: #eeeeee;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 25px;
+    font-weight:bold;
+    float: right;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease;
+}
+header nav a:hover{
+    background: #aaa;
+    border-radius: 50px;
+}
