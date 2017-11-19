@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Palmarés</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/achievements.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script type="text/javascript" src="js/form.js"></script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <img src="images/Avatar.jpg">
+                <a href="contact.html">Contacto</a>
+                <a href="achievements.html">Palmares</a>
+                <a href="events.html">Próximos Eventos</a>
+                <a href="players.html">Jugadores</a>
+                <a href="index.html">Inicio</a>
+            </nav>
+        </div>
+    </header>
+    <section>
+        <h2>Palmarés</h2>
+        <table class="tabla-palmares">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Posición</th>
+                    <th>Tier</th>
+                    <th>Torneo</th>
+                    <th>Resultado</th>
+                    <th>Equipo rival</th>
+                    <th>Ganancias</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>07/11/2017</td>
+                    <td>1º</td>
+                    <td>Primera</td>
+                    <td>Liga Alcosa Temporada 3</td>
+                    <td>3 : 1</td>
+                    <td><img class="rotar" src="images/Mineski_logo_06-2017_std.png"></td>
+                    <td>1.620.000 €</td>
+                </tr>
+                <tr>
+                    <td>15/10/2017</td>
+                    <td>1º</td>
+                    <td>Primera</td>
+                    <td>The International 2017</td>
+                    <td>3 : 0</td>
+                    <td><img class="rotar" src="images/Newbeelogo_std.png"></td>
+                    <td>10.250.500 €</td>
+                </tr>
+                <tr>
+                    <td>27/09/2017</td>
+                    <td>1º</td>
+                    <td>Mayor</td>
+                    <td>Liga andaluza temporada 8</td>
+                    <td>3 : 2</td>
+                    <td><img class="rotar" src="images/Fnaticlogo_std.png"></td>
+                    <td>720.000 €</td>
+                </tr>
+                <tr>
+                    <td>05/08/2017</td>
+                    <td>1º</td>
+                    <td>Mayor</td>
+                    <td>StarLadder i-League Invitational Season 2</td>
+                    <td>3 : 1</td>
+                    <td><img class="rotar" src="images/VGJ_logo_std.png"></td>
+                    <td>220.000 €</td>
+                </tr>
+                <tr>
+                    <td>19/06/2017</td>
+                    <td>2º</td>
+                    <td>Menor</td>
+                    <td>The Shanghai Menor 2017</td>
+                    <td>0 : 3</td>
+                    <td><img class="rotar" src="images/OGLogo_std.png"></td>
+                    <td>90.000 €</td>
+                </tr>
+                <tr>
+                    <td>26/05/2017</td>
+                    <td>1º</td>
+                    <td>Primera</td>
+                    <td>Internacional Amigooooo Cup</td>
+                    <td>3 : 1</td>
+                    <td><img class="rotar" src="images/Tnclogo_std.png"></td>
+                    <td>25.520.000 €</td>
+                </tr>
+                <tr>
+                    <td>09/03/2017</td>
+                    <td>6º</td>
+                    <td>Menor</td>
+                    <td>Chameleon League Manolo 2017</td>
+                    <td>1 : 3</td>
+                    <td><img class="rotar" src="images/Secretdotalogo_std.png"></td>
+                    <td>10.000 €</td>
+                </tr>
+                <tr>
+                    <td>28/01/2017</td>
+                    <td>3º</td>
+                    <td>Mayor</td>
+                    <td>Adrenaline Cyber League</td>
+                    <td>2 : 3</td>
+                    <td><img class="rotar" src="images/Escape_Gaminglogo_std.png"></td>
+                    <td>70.000 €</td>
+                </tr>
+                <tr>
+                    <td>07/11/2017</td>
+                    <td>1º</td>
+                    <td>Primera</td>
+                    <td>Liga Alcosa Temporada 2</td>
+                    <td>3 : 0</td>
+                    <td><img class="rotar" src="images/Tnclogo_std.png"></td>
+                    <td>1.500.000 €</td>
+                </tr>
+                <tr>
+                    <td>15/10/2016</td>
+                    <td>1º</td>
+                    <td>Primera</td>
+                    <td>The International 2016</td>
+                    <td>3 : 2</td>
+                    <td><img class="rotar" src="images/Eglogo_std.png"></td>
+                    <td>10.000.000 €</td>
+                </tr>
+                <tr>
+                    <td>25/09/2016</td>
+                    <td>2º</td>
+                    <td>Mayor</td>
+                    <td>Liga andaluza temporada 7</td>
+                    <td>2 : 3</td>
+                    <td><img class="rotar" src="images/Secretdotalogo_std.png"></td>
+                    <td>310.000 €</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="boton-mostrar">
+            <button>
+                <h3 style='cursor: pointer;' onClick="muestra_oculta('formulario')" title="" class="boton_mostrar">Añadir resultado</h3>
+            </button>
+        </div>
+        <div id="formulario">
+            <form action="" method="post">
+                <div>
+                    <label for="fecha">Fecha: </label>
+                    <input type="date" name="fecha" id="fecha">
+                </div>
+                <div>
+                    <label for="posicion">Posición: </label>
+                    <input type="number" name="posicion" id="posicion">
+                </div>
+                <div>
+                    <label for="tier">Tier: </label>
+                    <select class="campos" id="tier" name="tier">
+                        <option value="" selected="selected">- Selecciona -</option>
+                        <option value="primera">Primera</option>
+                        <option value="mayor">Mayor</option>
+                        <option value="menor">Menor</option>
+                        <option value="mensual">Mensual</option>
+                        <option value="semanal">Semanal</option>
+                        <option value="muestra">Muestra</option>
+                        <option value="calsificatorio">Clasificatorio</option>
+                        <option value="misc">Misc</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="torneo">Torneo: </label>
+                    <input type="text" name="torneo" id="torneo">
+                </div>
+                <div>
+                    <label for="resultado">Resultado: </label>
+                    <input type="text" name="resultado" id="resultado">
+                </div>
+                <div>
+                    <label for="rival">Equipo rival: </label>
+                    <input type="text" name="rival" id="rival">
+                </div>
+                <div>
+                    <label for="ganancias">Ganancias(euros): </label>
+                    <input type="number" name="ganancias" id="ganancias">
+                </div>
+                <input type="submit" class="boton_añadir" value="Añadir">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer-distributed">
+        <div class="footer-right">
+            <a href="https://twitter.com/?lang=es" target="_blank"><img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png" width=32 height=32 alt="Síguenos en Twitter" /></a>
+            <a href="https://es-es.facebook.com/" target="_blank"><img alt="Siguenos en Facebook" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png" width=32 height=32  /></a>
+            <a href="https://plus.google.com/discover?hl=es-419" target="_blank"><img alt="Siguenos en Google+" src="https://lh5.googleusercontent.com/-F_FBKktZWZk/T3nN0v4FeAI/AAAAAAAAAsc/7dHTxkxn4cI/s32/google32.png" width=32 height=32  /></a>
+            <a href="https://www.instagram.com/?hl=es" target="_blank"><img alt="Siguenos en Instagram" src="https://lh5.googleusercontent.com/-vBqtz2iv2BE/UIqE3LQyFMI/AAAAAAAABgA/TJ4W-vIBjsc/s32/instagram32.png" width=32 height=32  /></a>
+        </div>
+
+        <div class="footer-left">
+
+            <p class="footer-links">
+                <a href="" target="_blank">POLITICAS DE ALCOSA GAMING |</a>
+                <a href="" target="_blank">DISCLAIMER |</a>
+            </p>
+
+            <p>Copyright © 2016 AlcosaGaming Corporation. All rights reserved.<br><br></p>
+
+            <!--
+                 Los nombres de los países no se traducen
+            -->
+            <select name="select1" size="1">
+                <option translate="no" value="">Australia</option>
+                <option translate="no" value="">Canada</option>
+                <option translate="no" value="">France</option>
+                <option translate="no" value="">Germany</option>
+                <option translate="no" value="">United Kingdom</option>
+                <option translate="no" selected="selected" value="">United States</option>
+            </select>
+        </div>
+    </footer>
+</body>
+</html>
