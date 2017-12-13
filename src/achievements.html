@@ -2,15 +2,14 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Palmarés</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/achievementsEvents.css">
     <link rel="stylesheet" href="css/achievements.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <script type="text/javascript" src="js/form.js"></script>
+    <script src="js/form.js"></script>
 </head>
 <body>
 <header>
@@ -144,12 +143,10 @@
             </tbody>
         </table>
         <div class="boton-mostrar">
-            <button>
-                <h2 onClick="muestra_oculta('formulario')" title="" class="boton_mostrar">Añadir resultado</h2>
-            </button>
+            <button onClick="muestra_oculta('formulario')" class="boton_mostrar">Añadir resultado</button>
         </div>
         <div id="formulario">
-            <form action="" method="post">
+            <form action="#" method="post">
                 <div>
                     <label for="fecha">Fecha: </label>
                     <input type="date" name="fecha" id="fecha">
