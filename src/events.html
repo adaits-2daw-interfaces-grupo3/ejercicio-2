@@ -150,15 +150,22 @@
                 <div>
                     <label for="tier">Tier: </label>
                     <select class="campos" id="tier" name="tier">
-                        <option value="" selected="selected">- Selecciona -</option>
-                        <option value="primera">Primera</option>
-                        <option value="mayor">Mayor</option>
-                        <option value="menor">Menor</option>
-                        <option value="mensual">Mensual</option>
-                        <option value="semanal">Semanal</option>
-                        <option value="muestra">Muestra</option>
-                        <option value="calsificatorio">Clasificatorio</option>
-                        <option value="misc">Misc</option>
+                        <optgroup label="Tier Principales">
+                            <option value="primera">Primera</option>
+                            <option value="mayor">Mayor</option>
+                        </optgroup>
+                        <optgroup label="Tier Secundarios">
+                            <option value="menor">Menor</option>
+                            <option value="mensual">Mensual</option>
+                        </optgroup>
+                        <optgroup label="Tier Menores">
+                            <option value="semanal">Semanal</option>
+                            <option value="muestra">Muestra</option>
+                        </optgroup>
+                        <optgroup label="Otros">
+                            <option value="clasificatorio">Clasificatorio</option>
+                            <option value="misc">Misc</option>
+                        </optgroup>
                     </select>
                 </div>
                 <div>
