@@ -2,5 +2,5 @@
 
 ## Documentación:
 
-* [Ejercicio 1](https://raw.githubusercontent.com/adaits-2daw-cliente-grupo1/ejercicio-1/master/documentacion/Ejercicio 1.pdf)
-* [Ejercicio 2](https://raw.githubusercontent.com/adaits-2daw-cliente-grupo1/ejercicio-1/master/documentacion/Ejercicio 2.pdf)
+* [Ejercicio 1](https://github.com/adaits-2daw-interfaces-grupo3/ejercicio-2/blob/master/documentacion/Ejercicio%201.pdf) ([Descargar PDF](https://github.com/adaits-2daw-interfaces-grupo3/ejercicio-2/raw/master/documentacion/Ejercicio%201.pdf))
+* [Ejercicio 2](https://raw.githubusercontent.com/adaits-2daw-cliente-grupo1/ejercicio-1/master/documentacion/Ejercicio%202.pdf) ([Descargar PDF](https://github.com/adaits-2daw-interfaces-grupo3/ejercicio-2/raw/master/documentacion/Ejercicio%202.pdf))
