@@ -275,7 +275,7 @@ Al poner el botón en un div, podemos centrarlo en la pantalla.
 
 button{
     font-size: 100%;
-    width: 320px;
+    width: 300px;
     height: 100px;
     border: 1px solid;
     margin-top: 20px;
