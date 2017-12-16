@@ -10,44 +10,39 @@
 </head>
 <body>
 <header>
-    <div class="wrapper">
-        <nav>
-            <img src="images/Avatar.jpg">
-            <a href="contact.html">Contacto</a>
-            <a href="achievements.html">Palmares</a>
-            <a href="events.html">Próximos Eventos</a>
-            <a href="players.html">Jugadores</a>
-            <a href="index.html">Inicio</a>
-        </nav>
-    </div>
+    <input type="checkbox" id="btn-menu">
+    <label for="btn-menu"><img src="images/menu.png" alt="Icono del menu desplegable"></label>
+    <nav class="menu">
+        <ul>
+            <li><img src="images/Avatar.jpg" alt="Avatar de Alcosa Gaming"></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="players.html">Jugadores</a></li>
+            <li><a href="achievements.html">Palmares</a></li>
+            <li><a href="events.html">Próximos Eventos</a></li>
+            <li><a href="contact.html">Contacto</a></li>
+        </ul>
+    </nav>
 </header>
 
-    <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-        <div class="row">
-            <label for="name">Nombre:</label><br />
-            <input id="name" class="input" name="name" type="text" value="" size="30" /><br />
-        </div>
-        <div class="row">
-            <label for="email">Email:</label><br />
-            <input id="email" class="input" name="email" type="text" value="" size="30" /><br />
-        </div>
-        <div class="row">
-            <label for="message">Mensaje:</label><br />
-            <textarea id="message" class="input" name="message" rows="20" cols="50" style="margin: 0px 0px 5px; width: 600px; height: 250px;"></textarea><br />
-        </div>
-        <input id="submit_button" type="submit" value="Enviar" />
+<section>
+    <div class="form">
+        <form action="#">
+            <h2>CONTACTO</h2>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            <input type="email" name="email" id="email" placeholder="Email" required>
+            <textarea name="mensaje" id="mensaje" placeholder="Escriba aqui su mensaje" required></textarea>
+            <input type="button" id="boton" value="Enviar">
+        </form>
+    </div>
 
-        <div class="contact">
-            <a href="https://github.com/adaits-2daw-interfaces-grupo3/ejercicio-2">Git Hub del Proyecto</a>
-            <a href="https://github.com/Marcobr93">Marco</a>
-            <a href="https://github.com/MeLlamoPablo">Pablo</a>
-            <a href="https://github.com/Albertomb11">Alberto</a>
-            <a href="https://github.com/Trafalgar018">Eloy</a>
-        </div>
-
-    </form>
-
-
+    <div class="contact">
+        <a href="https://github.com/adaits-2daw-interfaces-grupo3/ejercicio-2">Git Hub del Proyecto</a>
+        <a href="https://github.com/Marcobr93">Marco</a>
+        <a href="https://github.com/MeLlamoPablo">Pablo</a>
+        <a href="https://github.com/Albertomb11">Alberto</a>
+        <a href="https://github.com/Trafalgar018">Eloy</a>
+    </div>
+</section>
 
 <footer class="footer-distributed">
     <div class="footer-right">

@@ -10,3 +10,4 @@ Hace que se cargue la función lo que predetermina que div estará oculto hasta 
 window.onload = function(){
     muestra_oculta('formulario');
 }
+
