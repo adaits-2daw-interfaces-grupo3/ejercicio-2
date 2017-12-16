@@ -8,7 +8,7 @@ table {
 }
 
 /*
-    Utilizzamos nth-of-type(odd) en los tr para darle color a las filas impares y de esta forma poder diferenciar las
+    Utilizamos nth-of-type(odd) en los tr para darle color a las filas impares y de esta forma poder diferenciar las
     filas con más facilidad.
 */
 tr:nth-of-type(odd) {
